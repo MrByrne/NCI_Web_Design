@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    /* setting height of sections to fill viewport */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    background-color: rgba(10,10,10,0.1);
+}
+.home {
+    /* Sets the background image of the homepage */
+    background-image: url("Images/Wow_Blank_Background.jpg");
+    /* do no repeat the image to cover the screen */
+    background-repeat: no-repeat;
+    /* change size of image to cover the screen */
+    background-size: cover;
+    /* Keeps the background image centred */
+    background-position: center center;
+
+}
+.menu {
+    /* background: rgb(211, 79, 79); */
+    background-color: #f4f3ef;
+} 
+.subdiv {
+    color: blue;
+    background-color: white;
+    position: relative;
+
+}
+.three {
+    /* background: rgb(67, 91, 175); */
+    background-color: rgba(10,10,10,0.1);
+}
+
+/* Style all input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+  }
