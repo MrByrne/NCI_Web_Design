@@ -13,7 +13,7 @@ section {
   justify-content: center;    /* centers content along main (x) axis */
   align-items: center;        /* centers content along cross (y) axis */
   color: yellow;            /* sets text colour to white */
-  
+  scroll-snap-align: start;   /* snap the section to the top of viewport */
 }
 
 .home {
@@ -40,3 +40,17 @@ section {
     
 }
 
+/* Page 2 - Menu Styling */
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.menu {
+    background: rgb(36, 164, 138);
+}
+.order {
+    background: rgb(211, 79, 79);
+}
