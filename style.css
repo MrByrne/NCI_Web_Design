@@ -3,24 +3,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Spartan', sans-serif;
 }
 
 /* Style all sections */
-section{
+section {
   height: 100vh;              /* setting height of sections to fill viewport */
   display: flex;              /* assign section display to use Flexbox */
   justify-content: center;    /* centers content along main (x) axis */
   align-items: center;        /* centers content along cross (y) axis */
-  color: white;             /* sets text colour to white */
-
-  /*possibly need to include this to make page 2 work */
-  /* scroll-snap-align: start; /* section snaps to start of page */
+  color: yellow;            /* sets text colour to white */
+  
 }
-
 
 .home {
   background-image: url("Images/Wow_Blank_Background.jpg"); /* Sets the background image of the homepage */
   background-repeat: no-repeat;                             /* do no repeat the image to cover the screen */
   background-size: cover;                                   /* change size of image to cover the screen */
   background-position: center center;                       /* Keeps the background image centred */
+  background-attachment: fixed;
+}
+
+.red_btn {
+  transform: translateY(-150%);                 /* move button upwards */
+  background: #f00;                           /* set backgournd colour or button to red */
+  color: #fff;                                /* set text colour to white */
+  display: inline-block;                        /* allows button height & width to be set */
+  padding: 10px;                                /* add 10 pixels of padding to button */
+  text-align: center;                           /* centers the text of the button */
+  text-decoration: none;                        /* removes the underline of the button */
+  width: 200px;                                 /* sets width of button */
+  font-family: bebas-neue-pro,sans-serif;       /* sets font of button text */      
+  font-weight: 700;                             /* sets how bold the text is*/
+  text-transform: uppercase;                    /* makes the text all capital letters */
+  font-size: 100%;                              /* font size */  
+    
+}
+
