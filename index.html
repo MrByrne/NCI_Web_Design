@@ -8,55 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
 
         <!-- Home Page -->
         <section class="home">
-            <h1>First Page</h1>
-        </section>
-
-
-
-        <!-- Menu Page -->
-        <section class="menu">
-            <div class="subdiv">
-                <!-- Use a hover function to show that images are not static
-                 -->
-                <a href="#jump_to_order">
-                    <img src="Images/burger1.jpg" alt="Burger 1">
-                </a>
-                <a href="#jump_to_order">
-                    <img src="Images/burger2.jpg" alt="Burger 2">
-                </a>
-                <a href="#jump_to_order">
-                    <img src="Images/burger3.jpg" alt="Burger 3">
-                </a>
-            </div>
-        </section>
-
-        <!-- Order Page -->
-        <section class="three">
-            <!-- real code -->
-            <a id="jump_to_order"></a>
-            <form name="student" method="post" onsubmit="validate()">
-                <label for="firstname"></label>
-                <input name="firstname" type="text" minlength="3" required="true"/>
-                <button>Submit</button>
-            </form> -->
-
-            <!-- test code -->
-            <form action="/action_page.php">
-                <label for="usrname">Username</label>
-                <input type="text" id="usrname" name="usrname" required>
-            
-                <label for="psw">Password</label>
-                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-                <input type="submit" value="Submit">
-            </form>
-            
-            
-
+            <a href="index.html" id="red_btn">Order Online</a>
         </section>
     </div>
+
 </body>
+
 </html>
