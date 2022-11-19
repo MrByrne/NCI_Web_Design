@@ -12,8 +12,8 @@ section {
   display: flex;              /* assign section display to use Flexbox */
   justify-content: center;    /* centers content along main (x) axis */
   align-items: center;        /* centers content along cross (y) axis */
-  color: yellow;            /* sets text colour to white */
-  
+  color: white;            /* sets text colour to white */
+  scroll-snap-align: start;   /* snap the section to the top of viewport */
 }
 
 .home {
@@ -39,4 +39,48 @@ section {
   font-size: 100%;                              /* font size */  
     
 }
+
+.red_btn:hover {                                /* change to button on hover*/
+  background-color: yellow;                   /* change the color to yellow */
+  color: #f00;                                /* change the text to red */      
+  transition: 0.5s;                             /* make the transition take 0.5 seconds */
+}
+
+/* Page 2 - Menu Styling */
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.menu {
+    background: rgb(36, 164, 138);
+}
+
+.order {
+    background: rgb(211, 79, 79);
+}
+
+#burger1:hover {
+  border: 10px solid #00000000;
+  transition: 0.5s;
+}
+#burger2:hover {
+  border: 10px solid rgb(36, 164, 138);
+  transition: 0.5s;
+}
+#burger3:hover {
+  border: 10px solid #00000000;
+  transition: 0.5s;
+}
+
+#scroll {
+  position: relative;
+  top: -5px;
+}
+
+
+
+
 
