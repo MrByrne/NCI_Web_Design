@@ -12,7 +12,7 @@ section {
   display: flex;              /* assign section display to use Flexbox */
   justify-content: center;    /* centers content along main (x) axis */
   align-items: center;        /* centers content along cross (y) axis */
-  color: white;            /* sets text colour to white */
+  color: white;             /* sets text colour to white */
   scroll-snap-align: start;   /* snap the section to the top of viewport */
 }
 
@@ -49,26 +49,26 @@ section {
 /* Page 2 - Menu Styling */
 
 .container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
+  scroll-snap-type: y mandatory;                /* always snap to position when not scrolling */
+  overflow-y: scroll;                           /* allow scroll to hidden section below */
+  height: 100vh;                                /* set height to viewport size */
 }
 
 .menu {
-    background: rgb(36, 164, 138);
+    background: rgb(36, 164, 138);            /* set background colour */
 }
 
 .order {
-    background: rgb(211, 79, 79);
-    display: flex;              /* assign section display to use Flexbox */
-    justify-content: center;    /* centers content along main (x) axis */
-    align-items: center;        /* centers content along cross (y) axis */
-    color: white;             /* sets text colour to white */
+    background: rgb(211, 79, 79);             /* set background colour */
+    display: flex;                              /* assign section display to use Flexbox */
+    justify-content: center;                    /* centers content along main (x) axis */
+    align-items: center;                        /* centers content along cross (y) axis */
+    color: white;                             /* sets text colour to white */
 }
 
 #burger1:hover {
-  border: 10px solid #00000000;
-  transition: 0.5s;
+  border: 10px solid #00000000;               /* on hover, create border */
+  transition: 0.5s;                             /* transition from no-border to full-border in 0.5 seconds */    
 }
 #burger2:hover {
   border: 10px solid rgb(36, 164, 138);
@@ -80,28 +80,27 @@ section {
 }
 
 #show_popup_button {
-  background: rgb(230, 230, 230);
-  border: 2px solid black;
-  padding: 5px;
-  
+  background: rgb(230, 230, 230);             /* set background colour of pop-up */
+  border: 2px solid black;                    /* create border of popup */ 
+  padding: 5px;                                 /* add padding */
 }
 
 #popup_container {
-  position: absolute;
-  left: 25%;
-  top: 50%;
-  width: 45%;
-  padding: 20px;
+  position: absolute;                            /* set popup to not change position on screen regardless of scrolling */
+  left: 25%;                                     /* position relative to left of section */
+  top: 50%;                                      /* position relative to top of section */
+  width: 45%;                                    /* width of popup container */
+  padding: 20px;      
   border: 1px solid #ccc;
-  box-shadow: 0px 0px 10px #ccc;
-  display: none;
+  box-shadow: 0px 0px 10px #ccc;                /* add a shadow around the popup container */
+  display: none;                                  /* hide the popup */
   background: yellow;
   color: #f00;
 }
 
 #close_button {
-  float: right;
-  cursor: pointer;
+  float: right;                                   /* position right */
+  cursor: pointer;                                /* change mouse to hand-icon */ 
 }
 
 #discount_container {
