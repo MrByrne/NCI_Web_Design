@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu & Order Page</title>
+
+    <!-- Links the HTML to the CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Links to jQuery Website -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -81,7 +87,21 @@
                         <option value="biggest">Biggest Burger Ever</option>
                     </select>
                 </form>
+
+                <!-- Health Warning Button -->
+                <button id="show_popup_button">Choosing Supersize? Click Here </button>
                 <br>
+
+                <!-- Health Warning -->
+                <div id="popup_container">
+                    <div id="close_warning">
+                        <span id="close_button">Close</span>
+                    </div>
+                    <h2>Health Warning</h2>
+                    <p>Your heart may explode if you eat this burger. We will not be held responsible. Good luck!</p>
+                </div>
+                <br>
+            
 
                 <!-- Quantity Dropdown Menu -->
                 <form>
@@ -92,17 +112,54 @@
                 </form>
                 <br>
 
-            <!-- Quantity Dropdown Menu -->
+                <!-- Quantity Dropdown Menu -->
                 <form>
                     <label>Discount Code:</label>
                     <br>
                     <input type="text">
-                    <button>Submit</button>
+                    <button id="show_discount_popup">Submit</button>
                 </form>
+
+                <!-- Discount Applied Popup -->
+                <div id="discount_container">
+                    <div id="close_warning">
+                        <span id="close_discount">Close</span>
+                    </div>
+                    <h1>Discount Applied!</h1>
+                    <p>We now owe you money :(</p>
+                </div>
+                <br>
 
             </div>
 
         </section>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            // Show Health Warning Popup
+            $("#show_popup_button").click(function() {
+                $("#popup_container").show();
+            })
+
+            // Close Health Warning Popup
+            $("#close_button").click(function() {
+                $("#popup_container").hide();
+            })
+
+            // Show Discount Applied Popup
+            $("#show_discount_popup").click(function() {
+                $("#discount_container").show();
+            })
+
+            // Close Discount Applied Popup
+            $("#close_discount").click(function() {
+                $("#discount_container").hide();
+            })
+
+        })
+    </script>
+    
 </body>
 </html>
