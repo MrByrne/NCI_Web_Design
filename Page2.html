@@ -13,33 +13,93 @@
 
         <!-- Menu Page -->
         <section class="menu">
-            <div class="subdiv">
-                <a href="#jump_to_order">
-                    <img id="burger1" src="Images/burger1.jpg" alt="Burger 1">
-                </a>
-                <a href="#jump_to_order">
-                    <img id="burger2" src="Images/burger2.jpg" alt="Burger 2">
-                </a>
-                <a href="#jump_to_order">
-                    <img id="burger3" src="Images/burger3.jpg" alt="Burger 3">
-                </a>
-
+            <div id="subdiv">
+                <!-- <div> -->
+                    <a href="#jump_to_order">
+                        <img id="burger1" src="Images/burger1.jpg" alt="Burger 1">
+                    </a>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <a href="#jump_to_order">
+                        <img id="burger2" src="Images/burger2.jpg" alt="Burger 2">
+                    </a>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <a href="#jump_to_order">
+                        <img id="burger3" src="Images/burger3.jpg" alt="Burger 3">
+                    </a>
+                <!-- </div> -->
             </div>
+
         </section>
 
         <!-- Order Page -->
         <section class="order">
             <a id="jump_to_order"></a>
-            <div id="scroll">
-                <p>Scroll back up to see our menu!</p>
-            </div>
-
             <div>
+
+                <!-- Input Username -->
                 <form>
-                    <label>Name</label>
-                    <input type="text" minlength="5" required="true">
+                    <label>Username</label>
+                    <br>
+                    <input type="text" minlength="2" required="true">
                     <button>Submit</button>
                 </form>
+                <br>
+
+                <!-- Input Password -->
+                <form>
+                    <label>Password</label>
+                    <br>
+                    <input type="password" minlength="9" maxlength="20" required="true">
+                    <button>Submit</button>
+                </form>
+                <br>
+
+                <!-- Burger Dropdown Menu -->
+                <form>
+                    <label>Choose your burger:</label>
+                    <br>
+                    <select>
+                        <option value="">Select</option>
+                        <option value="hamburger">WOW Hamburger</option>
+                        <option value="cheeseburger">WOW Cheeseburger</option>
+                        <option value="bacon">WOW Bacon Cheeseburger</option>
+                    </select>
+                </form>
+                <br>
+
+                <!-- Size Dropdown Menu -->
+                <form>
+                    <label>Burger Size:</label>
+                    <br>
+                    <select>
+                        <option value="">Select</option>
+                        <option value="large">6oz Large</option>
+                        <option value="xlarge">10oz Extra-Large</option>
+                        <option value="super">16oz Supersize</option>
+                        <option value="biggest">Biggest Burger Ever</option>
+                    </select>
+                </form>
+                <br>
+
+                <!-- Quantity Dropdown Menu -->
+                <form>
+                    <label>Quantity:</label>
+                    <br>
+                    <input type="number" required="true">
+                    <button>Submit</button>
+                </form>
+                <br>
+
+            <!-- Quantity Dropdown Menu -->
+                <form>
+                    <label>Discount Code:</label>
+                    <br>
+                    <input type="text">
+                    <button>Submit</button>
+                </form>
+
             </div>
 
         </section>

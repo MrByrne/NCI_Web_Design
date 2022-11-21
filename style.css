@@ -60,6 +60,10 @@ section {
 
 .order {
     background: rgb(211, 79, 79);
+    display: flex;              /* assign section display to use Flexbox */
+    justify-content: center;    /* centers content along main (x) axis */
+    align-items: center;        /* centers content along cross (y) axis */
+    color: white;             /* sets text colour to white */
 }
 
 #burger1:hover {
@@ -75,10 +79,6 @@ section {
   transition: 0.5s;
 }
 
-#scroll {
-  position: relative;
-  top: -5px;
-}
 
 
 
